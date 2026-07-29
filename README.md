@@ -1,6 +1,6 @@
 # 🎵 TikTok Downloader
 
-Aplikasi web sederhana untuk mengunduh **video, foto (slideshow), dan audio TikTok tanpa watermark** langsung dari browser.
+Website untuk mengunduh **Video, Foto (Slideshow), dan Audio TikTok Tanpa Watermark** langsung dari browser.
 
 ## ✨ Fitur
 
