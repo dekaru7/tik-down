@@ -107,9 +107,6 @@ Jika project ini bermanfaat, jangan lupa berikan ⭐ pada repository GitHub.
 Developer:
 **Devzii**
 
-Link:
-https://linktr.ee/devzii_
-
 ---
 
 > **Disclaimer**
