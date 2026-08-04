@@ -44,8 +44,6 @@ cd tikdown
 
 3. Buka file `index.html` menggunakan browser.
 
-Atau gunakan Live Server pada VS Code agar pengalaman pengembangan lebih nyaman.
-
 ---
 
 ## 🛠️ Teknologi
