@@ -87,7 +87,7 @@ async function downloadAllPhotos(images, baseName, btn) {
   if (ok === 0) {
     setStatus('Gagal mengunduh foto — coba unduh satu per satu.', 'error');
   } else {
-    btn.textContent = 'MEMBUAT ZIP…';
+    btn.textContent = 'Membuat ZIP…';
     const content = await zip.generateAsync({ type: 'blob' });
     saveBlob(content, `${baseName}.zip`);
   }
@@ -99,14 +99,14 @@ async function downloadAllPhotos(images, baseName, btn) {
 function renderPhotoResult(d, author, linkRow) {
   const btnAll = document.createElement('button');
   btnAll.className = 'dl-btn pink';
-  btnAll.textContent = `UNDUH SEMUA (${d.images.length}) .ZIP`;
+  btnAll.textContent = `Unduh Semua (${d.images.length}) .ZIP`;
   btnAll.onclick = () => downloadAllPhotos(d.images, `${author}-foto-tiktok`, btnAll);
   linkRow.appendChild(btnAll);
 
   if (d.music) {
     const btnAudio = document.createElement('button');
     btnAudio.className = 'dl-btn alt';
-    btnAudio.textContent = 'UNDUH AUDIO';
+    btnAudio.textContent = 'Unduh Audio';
     btnAudio.onclick = () => downloadSingle(d.music, `${author}-audio.mp3`, btnAudio);
     linkRow.appendChild(btnAudio);
   }
@@ -130,14 +130,14 @@ function renderPhotoResult(d, author, linkRow) {
 function renderVideoResult(d, author, linkRow) {
   const btnSd = document.createElement('button');
   btnSd.className = 'dl-btn';
-  btnSd.textContent = 'UNDUH VIDEO';
+  btnSd.textContent = 'Unduh Video';
   btnSd.onclick = () => downloadSingle(d.play, `${author}-video.mp4`, btnSd);
   linkRow.appendChild(btnSd);
 
   if (d.hdplay) {
     const btnHd = document.createElement('button');
     btnHd.className = 'dl-btn alt';
-    btnHd.textContent = 'VERSI HD';
+    btnHd.textContent = 'Versi HD';
     btnHd.onclick = () => downloadSingle(d.hdplay, `${author}-video-hd.mp4`, btnHd);
     linkRow.appendChild(btnHd);
   }
@@ -145,7 +145,7 @@ function renderVideoResult(d, author, linkRow) {
   if (d.music) {
     const btnAudio = document.createElement('button');
     btnAudio.className = 'dl-btn alt';
-    btnAudio.textContent = 'UNDUH AUDIO';
+    btnAudio.textContent = 'Unduh Audio';
     btnAudio.onclick = () => downloadSingle(d.music, `${author}-audio.mp3`, btnAudio);
     linkRow.appendChild(btnAudio);
   }
