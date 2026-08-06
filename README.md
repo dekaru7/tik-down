@@ -23,7 +23,7 @@ tikdown/
 ├── css/
 │   └── style.css
 └── js/
-    └── script.js
+    └── main.js
 ```
 
 ---
